@@ -1,7 +1,7 @@
 import 'package:exercicio_nav/bemvindo.dart';
 import 'package:exercicio_nav/cont.dart';
 import 'package:exercicio_nav/sobre.dart';
-import 'package:flutter/material.dart';
+
 import 'home.dart';
 
 void main() {
