@@ -3,6 +3,7 @@ import 'package:aplicacao/sobre.dart';
 import 'package:flutter/material.dart';
 import 'bemvindo.dart';
 import 'NavBar.dart';
+import 'book.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -17,7 +18,8 @@ int _indice = 0;
   List<Widget> _telas = [
   BemVindo(),
   Cont(),
-  Sobre()
+  Book(),
+  Sobre(),
 ];
 
 
@@ -35,7 +37,7 @@ int _indice = 0;
         drawer: NavBar(),
         appBar: AppBar(
           centerTitle: true,
-          title: const Text("Bem-vindo(a)!"),
+          
         ),
       body: 
      
@@ -45,20 +47,26 @@ int _indice = 0;
 
       bottomNavigationBar: BottomNavigationBar(
       currentIndex: _indice,
+      selectedItemColor: Colors.lightBlue, // Defina a cor quando selecionado
+      unselectedItemColor: Color.fromARGB(255, 4, 40, 107),
       onTap: _itemClicado,
         // ignore: prefer_const_literals_to_create_immutables
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home, ),
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_bag),
-            label: "Contador",
+            icon: Icon(Icons.shopping_bag, ),
+            label: "Counter",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "Sobre",
+            icon: Icon(Icons.book,  ),
+            label: "Books",
+          ),
+            BottomNavigationBarItem(
+            icon: Icon(Icons.person,),
+            label: "About", 
           ),
 
       ]

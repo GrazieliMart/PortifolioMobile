@@ -11,20 +11,14 @@ class _SobreState extends State<Sobre> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          "SOBRE MIM",
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+     
       body: SingleChildScrollView(
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(height: 10),
+              SizedBox(height: 20),
               ClipOval(
                 child: Container(
                   width: 200,
@@ -55,7 +49,7 @@ class _SobreState extends State<Sobre> {
                   children: [
                     SizedBox(height: 2),
                     Text(
-                      "Programadora Web\n ",
+                      "Web Developer\n ",
                       style: TextStyle(fontSize: 20,  fontWeight: FontWeight.bold,),
                       textAlign: TextAlign.center,
                     ),
@@ -65,19 +59,19 @@ class _SobreState extends State<Sobre> {
                       textAlign: TextAlign.center,
                     ),
                     Text(
-                      "Técnica em Desevolvimento de Sistemas",
+                      "Systems Development Technique",
                       style: TextStyle(fontSize: 15),
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(height: 2),
+                    SizedBox(height: 1),
                     Text(
-                      ' \n Pelo "COTIL/UNICAMP" \n Foco de aprendizagem em programação \n HTML, CSS, Java Script, PHP, Flutter, Java \n e outras linguagens que aplico de maneira \n a solucionar problemas obtendo resultados com alto valor em desempenho',
+                      ' \n Learning focus on programming \n HTML, CSS, Java Script, PHP, Flutter, Java \n and other programming languages',
                       style: TextStyle(fontSize: 15),
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 30),
                     Text(
-                      ' Conect-se comigo',
+                      ' Conect with me',
                       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold,),
                       textAlign: TextAlign.center,
                     ),

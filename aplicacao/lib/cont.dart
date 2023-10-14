@@ -13,17 +13,17 @@ class _ContState extends State<Cont> {
   Widget build(BuildContext context) {
     return 
     Scaffold(
-      appBar: AppBar(centerTitle: true,title: Text("CONTADOR", style: TextStyle(fontSize: 20),),),
+     
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.network(
-            'https://pbs.twimg.com/media/FEF-zXhX0AkoCt7.jpg',
+            'https://cdn-icons-png.flaticon.com/512/5673/5673753.png',
             width: 400,
             height: 200,
           ),
           SizedBox(height: 20),
-          Text("Contador com Stateful Widget",style: TextStyle(fontSize: 20),),
+          Text("Counter Stateful Widget",style: TextStyle(fontSize: 20),),
           SizedBox(height: 20,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -53,7 +53,7 @@ class _ContState extends State<Cont> {
           ),
           SizedBox(height: 20,),
 
-          Text("Valor do contador: $numero",style: TextStyle(fontSize: 30)),
+          Text("Counter value: $numero",style: TextStyle(fontSize: 30)),
         ],
       ),
     );

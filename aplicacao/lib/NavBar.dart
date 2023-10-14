@@ -17,13 +17,15 @@ class _NavBarState extends State<NavBar> {
         children: [  
         
           UserAccountsDrawerHeader(
-            accountName: Text('Bem-vindo(a), Tania'), 
-            accountEmail: Text('bassoTania@gmail.com'),
+            accountName: Text('Welcome to my portfolio!'), 
+            accountEmail: Text('grazielimartins5@gmail.com'),
             currentAccountPicture: CircleAvatar(
-              child: ClipOval(child: Image.network("https://cdn1.vectorstock.com/i/thumb-large/38/10/solid-purple-gradient-user-icon-web-icon-vector-23623810.jpg",
+              child: ClipOval(child:  Image.network(
+                'https://cdn-icons-png.flaticon.com/512/3177/3177440.png',
               width: 90,
               height: 90,
               fit: BoxFit.cover,)
+               
               ,)
             ),
            decoration: BoxDecoration(
@@ -72,25 +74,28 @@ class _NavBarState extends State<NavBar> {
           ),
           */
 Column(children: [
-  
+   SizedBox(height:10),
+ Row(children:[
+   
+     SizedBox(width:12),
+    Icon( Icons.dark_mode),
+     SizedBox(width:5),
+  Text("Dark Mode"),],),
+
+ SizedBox(height:10),
   Row(children:[
       SizedBox(width:12),
-    Icon( Icons.abc),
-     SizedBox(width:2),
-  Text("Home"),],),
+    Icon( Icons.notifications, color: const Color.fromARGB(255, 7, 164, 255),),
+     SizedBox(width:5),
+  Text("Notifications"),],),
   
-  Row(children:[
-     SizedBox(width:12),
-    Icon( Icons.abc),
-     SizedBox(width:2),
-  Text("Contador"),],),
-
-
+   SizedBox(height:10),
     Row(children:[
        SizedBox(width:12),
-    Icon( Icons.abc),
-    SizedBox(width:2),
-  Text("Sobre"),
+    Icon( Icons.book, color: const Color.fromARGB(255, 7, 164, 255),),
+    SizedBox(width:5),
+  Text("Books"), 
+  SizedBox(height:20),
   ],
   
   ),
@@ -100,7 +105,7 @@ Column(children: [
 ],),
        
          
-         SizedBox(height: 400),
+         SizedBox(height: 370),
           
           Divider(
             thickness: 2,
