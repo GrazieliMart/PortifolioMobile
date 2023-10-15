@@ -106,32 +106,8 @@ Column(children: [
        
          
          SizedBox(height: 370),
-          
-          Divider(
-            thickness: 2,
-          ),
-          Row(children:[ 
-          SizedBox(width: 100,),
-         ElevatedButton(onPressed: (){
-           Navigator.pushNamed(context, '/cadastro');
-         }, child: Text("Dev Tools"),
-         
-         style: 
-         
-         
-      ButtonStyle(
        
-          shape: MaterialStateProperty.all(
-            RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(50)
-            )
-          ),
-          
-         ),
-        ),
-       ],
-),
-
+        
         ],
 
       ),

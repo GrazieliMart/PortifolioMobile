@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Sobre extends StatefulWidget {
   const Sobre({super.key});
@@ -65,11 +66,16 @@ class _SobreState extends State<Sobre> {
                     ),
                     SizedBox(height: 1),
                     Text(
-                      ' \n Learning focus on programming \n HTML, CSS, Java Script, PHP, Flutter, Java \n and other programming languages',
+                      ' \n Learning focus on programming \n HTML, CSS, Java Script, PHP, Flutter, Java \n and other programming languages.',
                       style: TextStyle(fontSize: 15),
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(height: 30),
+                    Text(
+                      ' Intermediate English',
+                      style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(height: 20),
                     Text(
                       ' Conect with me',
                       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold,),
@@ -79,19 +85,19 @@ class _SobreState extends State<Sobre> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         InkWell(
-                          onTap: (){
-                          
+                        onTap: () {
+                           launch('https://github.com/GrazieliMart',);
                           },
                           child: Image.network(
-                            'https://th.bing.com/th/id/OIP.gl57OWF_xR6YBwjw5DJVKgHaEK?pid=ImgDet&rs=1', // Substitua pelo caminho da sua imagem
-                            width: 60,
+                            'https://th.bing.com/th/id/OIP.gl57OWF_xR6YBwjw5DJVKgHaEK?pid=ImgDet&rs=1', 
+                            width: 65,
                             height: 60,
                           ),
                         ),
                         SizedBox(width: 20),
                         InkWell(
                           onTap: () {
-                           
+                           launch('https://www.linkedin.com/in/grazieli-freitas-martins-61329b258/',);
                           },
                           child: Image.network(
                             'https://th.bing.com/th/id/OIP.TxdQEKMvxsSmiuG1-zhb7AHaHa?pid=ImgDet&rs=1', // Substitua pelo caminho da sua imagem
@@ -101,8 +107,8 @@ class _SobreState extends State<Sobre> {
                         ),
                         SizedBox(width: 20),
                         InkWell(
-                          onTap: () {
-                        
+                         onTap: () {
+                           launch('https://www.instagram.com/grazi.mart/',);
                           },
                           child: Image.network(
                             'https://th.bing.com/th/id/OIP.w_zDkEJ9aLiWR-g0rff8hwHaHa?pid=ImgDet&rs=1', // Substitua pelo caminho da sua imagem

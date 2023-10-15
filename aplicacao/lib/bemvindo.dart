@@ -20,6 +20,7 @@ class _BemVindoState extends State<BemVindo> {
         body: SingleChildScrollView(
           child: Column(
             children: [
+             
               Container(
                 constraints: BoxConstraints(maxWidth: double.infinity),
                 child: Image.network(
@@ -48,16 +49,15 @@ class _BemVindoState extends State<BemVindo> {
                     size: 30,
                   ),
                   SizedBox(width: 10),
-                  Text("Flutter Projects", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  )
+                  Text(
+                    "Flutter Projects",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
-            
-             
-             
               SizedBox(height: 30),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20), // Adicionando margens laterais
+                padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Container(
                   padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
@@ -77,12 +77,15 @@ class _BemVindoState extends State<BemVindo> {
                   ),
                 ),
               ),
-               SizedBox(height: 30,),
+              SizedBox(height: 30),
+
+/*
+              
               Divider(
-                 thickness: 2,
-                ),
-                SizedBox(height: 30,),
-                Row(
+                thickness: 2,
+              ),
+              SizedBox(height: 30),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
@@ -91,97 +94,79 @@ class _BemVindoState extends State<BemVindo> {
                     size: 30,
                   ),
                   SizedBox(width: 10),
-                  
-                  Text("Programs", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  )
+                  Text(
+                    "Programs",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
-                 SizedBox(height: 30),
-
-
-
-                 Row( 
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                      Padding(
-  padding: EdgeInsets.symmetric(horizontal: 20),
-  child: Container(
-    padding: EdgeInsets.all(20),
-    decoration: BoxDecoration(
-     // color: Color.fromARGB(255, 191, 217, 255),
-      borderRadius: BorderRadius.circular(10),
-      boxShadow: [
-        BoxShadow(
-          color: Colors.grey,
-          offset: Offset(0, 3),
-          blurRadius: 10,
-        ),
-      ],
-    ),
-    child: Row(
-      children: [
-        Image.network(
-          'https://cdn-icons-png.flaticon.com/512/3625/3625050.png',
-          width: 100,
-          height: 100,
-        ),
-       
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            
-           
-          ],
-        ),
-      ],
-    ),
-  ),
-),
-
-
-
-Padding(
-  padding: EdgeInsets.symmetric(horizontal: 20),
-  child: Container(
-    padding: EdgeInsets.all(20),
-    decoration: BoxDecoration(
-      color: Color.fromARGB(255, 191, 217, 255),
-      borderRadius: BorderRadius.circular(10),
-      boxShadow: [
-        BoxShadow(
-          color: Colors.grey,
-          offset: Offset(0, 3),
-          blurRadius: 10,
-        ),
-      ],
-    ),
-    child: Row(
-      children: [
-        Image.network(
-          'https://cdn-icons-png.flaticon.com/512/167/167756.png',
-          width: 100,
-          height: 100,
-        ),
-       
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+              SizedBox(height: 30),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/book');
+                    },
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 191, 217, 255),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey,
+                            offset: Offset(0, 3),
+                            blurRadius: 10,
+                          ),
+                        ],
+                      ),
+                      child: Row(
+                        children: [
+                          Image.network(
+                            'https://cdn-icons-png.flaticon.com/512/3625/3625050.png',
+                            width: 100,
+                            height: 100,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                
+              
+              SizedBox(height: 20),
              
-          ],
-        ),
-      ],
-    ),
-  ),
-),
-                  ],
-
-
-
-
-                 ),
-             
-SizedBox(height: 50,)
-
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/book');
+                    },
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 191, 217, 255),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey,
+                            offset: Offset(0, 3),
+                            blurRadius: 10,
+                          ),
+                        ],
+                      ),
+                      child: Row(
+                        children: [
+                          Image.network(
+                            'https://cdn-icons-png.flaticon.com/512/167/167756.png',
+                            width: 100,
+                            height: 100,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 50),*/
             ],
           ),
         ),

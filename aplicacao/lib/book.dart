@@ -69,12 +69,38 @@ class _BookState extends State<Book> {
                     Text(
                       "Enjoy!",
                       style: TextStyle(fontSize: 17),
-                      textAlign: TextAlign.center,
                     ),
                   ],
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 20),
+              Container(
+                color: Color.fromARGB(255, 198, 211, 214), // Cor de fundo do container roxo
+                width: 400,
+                height: 500, // Altura do novo container
+                padding: EdgeInsets.all(20),
+                child: Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "Search for books...",
+                          border: InputBorder.none,
+                          icon: Icon(Icons.search, color: Colors.grey),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    // Outros widgets relacionados à pesquisa de livros podem ser adicionados aqui
+                  ],
+                ),
+              ),
+              SizedBox(height: 20),
             ],
           ),
         ),
@@ -89,7 +115,7 @@ class SemiCircleClipper extends CustomClipper<Path> {
     final path = Path()
       ..lineTo(0, size.height) // Parte reta superior
       ..quadraticBezierTo( // Curva do semicírculo
-        size.width / 2, 0,
+        size.width / 2, 10,
         size.width, size.height,
       )
       ..lineTo(size.width, size.height); // Parte reta inferior
