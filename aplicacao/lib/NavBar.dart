@@ -85,14 +85,14 @@ Column(children: [
  SizedBox(height:10),
   Row(children:[
       SizedBox(width:12),
-    Icon( Icons.notifications, color: const Color.fromARGB(255, 7, 164, 255),),
+    Icon( Icons.notifications,),
      SizedBox(width:5),
   Text("Notifications"),],),
   
    SizedBox(height:10),
     Row(children:[
        SizedBox(width:12),
-    Icon( Icons.book, color: const Color.fromARGB(255, 7, 164, 255),),
+    Icon( Icons.book,),
     SizedBox(width:5),
   Text("Books"), 
   SizedBox(height:20),

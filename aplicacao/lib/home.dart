@@ -34,7 +34,12 @@ int _indice = 0;
   Widget build(BuildContext context) {
     return Scaffold(
 
-       
+         drawer: NavBar(),
+         appBar: AppBar(
+          actions: [
+          
+          ],
+         ),
       body: 
      
       
@@ -43,10 +48,10 @@ int _indice = 0;
 
       bottomNavigationBar: BottomNavigationBar(
       currentIndex: _indice,
-      selectedItemColor: Colors.lightBlue, // Defina a cor quando selecionado
+      selectedItemColor: Colors.lightBlue,
       unselectedItemColor: Color.fromARGB(255, 0, 0, 0),
       onTap: _itemClicado,
-        // ignore: prefer_const_literals_to_create_immutables
+   
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home, ),

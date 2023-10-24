@@ -43,7 +43,7 @@ class _SobreState extends State<Sobre> {
               SizedBox(height: 10),
               Container(
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 255, 255, 255),
+                  color: Color.fromARGB(0, 255, 255, 255),
                 ),
                 width: 300,
                 child: Column(
@@ -89,20 +89,20 @@ class _SobreState extends State<Sobre> {
                            launch('https://github.com/GrazieliMart',);
                           },
                           child: Image.network(
-                            'https://th.bing.com/th/id/OIP.gl57OWF_xR6YBwjw5DJVKgHaEK?pid=ImgDet&rs=1', 
-                            width: 65,
-                            height: 60,
+                            'https://cdn-icons-png.flaticon.com/512/25/25231.png', 
+                            width: 25,
+                            height: 25,
                           ),
                         ),
-                        SizedBox(width: 20),
+                        SizedBox(width: 25),
                         InkWell(
                           onTap: () {
                            launch('https://www.linkedin.com/in/grazieli-freitas-martins-61329b258/',);
                           },
                           child: Image.network(
-                            'https://th.bing.com/th/id/OIP.TxdQEKMvxsSmiuG1-zhb7AHaHa?pid=ImgDet&rs=1', // Substitua pelo caminho da sua imagem
-                            width: 45,
-                            height: 45,
+                            'https://brunopalmahidroponia.com.br/wp-content/uploads/2020/07/logo-instagram-png-fundo-transparente.png', // Substitua pelo caminho da sua imagem
+                            width: 25,
+                            height: 25,
                           ),
                         ),
                         SizedBox(width: 20),
@@ -111,7 +111,7 @@ class _SobreState extends State<Sobre> {
                            launch('https://www.instagram.com/grazi.mart/',);
                           },
                           child: Image.network(
-                            'https://th.bing.com/th/id/OIP.w_zDkEJ9aLiWR-g0rff8hwHaHa?pid=ImgDet&rs=1', // Substitua pelo caminho da sua imagem
+                            'https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png', // Substitua pelo caminho da sua imagem
                             width: 45,
                             height: 45,
                           ),

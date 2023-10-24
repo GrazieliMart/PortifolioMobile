@@ -22,7 +22,7 @@ class _BookState extends State<Book> {
                   ClipPath(
                     clipper: SemiCircleClipper(),
                     child: Container(
-                      color: Colors.blue, // Cor de fundo da forma
+                      color: Color.fromARGB(255, 113, 179, 255), // Cor de fundo da forma
                       height: 150, // Altura da parte reta do semicírculo
                     ),
                   ),
@@ -50,7 +50,7 @@ class _BookState extends State<Book> {
               SizedBox(height: 10),
               Container(
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 255, 255, 255),
+                  color: Color.fromARGB(0, 255, 255, 255),
                 ),
                 width: 300,
                 child: Column(
@@ -75,7 +75,7 @@ class _BookState extends State<Book> {
               ),
               SizedBox(height: 20),
               Container(
-                color: Color.fromARGB(255, 198, 211, 214), // Cor de fundo do container roxo
+                color: Color.fromARGB(255, 113, 179, 255), // Cor de fundo do container roxo
                 width: 400,
                 height: 500, // Altura do novo container
                 padding: EdgeInsets.all(20),
@@ -84,14 +84,14 @@ class _BookState extends State<Book> {
                     Container(
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: const Color.fromARGB(0, 255, 255, 255),
                         borderRadius: BorderRadius.circular(25),
                       ),
                       child: TextField(
                         decoration: InputDecoration(
                           hintText: "Search for books...",
                           border: InputBorder.none,
-                          icon: Icon(Icons.search, color: Colors.grey),
+                          icon: Icon(Icons.search, color: Color.fromARGB(185, 255, 255, 255)),
                         ),
                       ),
                     ),
